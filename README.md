@@ -2,7 +2,7 @@
 
 Read FLIFC images in Delphi, Free Pascal and Lazarus
 
-Requires .DLL files (included). For Linux and MacOS you need to download binaries from libheif project.
+Requires .DLL files (included). For Linux and MacOS you need to download binaries from libflif project.
 
 ## Usage examples
 
