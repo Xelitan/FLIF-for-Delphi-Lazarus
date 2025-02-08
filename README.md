@@ -1,6 +1,6 @@
 # FLIF-for-Delphi-Lazarus
 
-Read FLIFC images in Delphi, Free Pascal and Lazarus
+Read and write FLIFC images in Delphi, Free Pascal and Lazarus
 
 Requires .DLL files (included). For Linux and MacOS you need to download binaries from libflif project.
 
@@ -15,7 +15,8 @@ Requires .DLL files (included). For Linux and MacOS you need to download binarie
     var f: TFlifImage;
     begin
       f := TFlifImage.Create;
-      f.LoadFromFile('test.flif');
+      f.Assign(Bitmap...);
+      f.SAveToFile('test.flif');
       f.free;
     end;
 
@@ -23,5 +24,3 @@ Requires .DLL files (included). For Linux and MacOS you need to download binarie
 
 Should work under other 64 bit Delphis.
 Needs tests under 32 bit Lazarus and 32 bit Delphi.
-
-TODO: saving to FLIF
