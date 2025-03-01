@@ -5,8 +5,8 @@ unit FlifImage;
 ////////////////////////////////////////////////////////////////////////////////
 //                                                                            //
 // Description:	Reader for FLIF images                                        //
-// Version:	0.1                                                           //
-// Date:	08-FEB-2025                                                   //
+// Version:	0.2                                                           //
+// Date:	01-MAR-2025                                                   //
 // License:     MIT                                                           //
 // Target:	Win64, Free Pascal, Delphi                                    //
 // Copyright:	(c) 2025 Xelitan.com.                                         //
@@ -70,6 +70,7 @@ type
     procedure SaveToStream(Stream: TStream); override;
     constructor Create; override;
     destructor Destroy; override;
+    function ToBitmap: TBitmap;
   end;
 
 implementation
@@ -252,6 +253,11 @@ destructor TFlifImage.Destroy;
 begin
   FBmp.Free;
   inherited Destroy;
+end;
+
+function TFlifImage.ToBitmap: TBitmap;
+begin
+  Result := FBmp;
 end;
 
 initialization
