@@ -20,7 +20,7 @@ Requires .DLL files (included). For Linux and MacOS you need to download binarie
       f.free;
     end;
 
-# Tested under 64 bit Lazarus and 64 bit Delphi 12.
+# Tested under 64 bit/32 bit Lazarus and 64 bit Delphi 12
 
 Should work under other 64 bit Delphis.
-Needs tests under 32 bit Lazarus and 32 bit Delphi.
+Needs tests under 32 bit Delphi.
